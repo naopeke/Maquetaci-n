@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border: solid 2px black;
+}
+
+
+.flex-list {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.flex-list li {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.img-container img {
+    min-width: 450px;
+    height: auto;
+}

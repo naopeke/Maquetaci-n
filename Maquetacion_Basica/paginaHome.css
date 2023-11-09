@@ -1,0 +1,32 @@
+header {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+
+.flex-list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-list li {
+    list-style: none;
+    margin-top: 16px;
+}
+
+.container {
+    display: flex;
+}
+
+.message {
+    padding: 30px;
+}
+
+.image-container img{
+    max-height: 500px;
+    padding: 60px 80px 50px 30px;
+}
+

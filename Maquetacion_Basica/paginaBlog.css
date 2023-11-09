@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    height: 70px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    border: solid 2px black;
+}
+
+.flex-list {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.flex-list li {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+article header {
+    background-color: transparent;
+    color: initial;
+    border: initial;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 550px;
+    padding: 0 20px 0 50px;
+}
+
