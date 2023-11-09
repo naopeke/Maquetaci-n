@@ -1,8 +1,15 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
 header {
-    height: 50px;
+    height: 70px;
     background-color: black;
     color: white;
     text-align: center;
+    margin: 0;
+    border: solid 2px black;
 }
 
 
@@ -14,7 +21,14 @@ header {
 
 .flex-list li {
     list-style: none;
-    margin-top: 16px;
+    padding: 10px 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 .container {

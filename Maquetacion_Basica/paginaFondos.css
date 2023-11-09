@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -26,6 +26,10 @@ header {
     font-weight: bold;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
 .img-container {
     display: flex;
