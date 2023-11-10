@@ -35,9 +35,14 @@ a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    margin-bottom: 0;
 }
 
+
 .img-container img {
-    min-width: 450px;
-    height: auto;
+    /* min-width: 450px;
+    height: auto; */
+
+    width:33.33%;
+    height:auto;
 }

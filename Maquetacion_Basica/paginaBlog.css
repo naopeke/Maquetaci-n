@@ -40,13 +40,17 @@ article header {
 section {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    /* text-align: center; */
+    /*! modificado */
+    text-align: justify;
     justify-content: center;
     align-items: center;
 }
 
 section article {
     max-width: 600px;
+    /*! añadido */
+    text-align-last: center;
 }
 
 .image-container img {
