@@ -3,6 +3,8 @@ body {
     background-color: #32373c;
     color: #abb8c3;
     font-family: 'Poppins', sans-serif;
+    /* border: solid 2px red; */
+    min-height: 100vh;
 }
 
 a {
@@ -48,9 +50,9 @@ li {
 }
 
 container {
-    width: 1170px;
+    width: 100%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     letter-spacing: 1vh;
     display: flex;
     justify-content: center;
@@ -65,13 +67,112 @@ container {
 
 
 
+.top-wrapper{
+    background-image: url(https://www.codenotch.com/wp-content/uploads/2021/09/duotone-3-400x267.png);
+    border: solid 2px white;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.top-wrapper h1{
+    font-size: 40px;
+    text-align: center;
+    margin:0;
+}
+
+.top-wrapper h3{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+/*----middle wrapper---*/
+.middle-wrapper{
+    /* border: solid 2px yellow; */
+    margin-top: 0;
+}
+
+.middle-wrapper h1{
+    display: flex;
+    justify-content: center;
+}
+
+.middle-wrapper ul{
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.bottom-wrapper{
+    border: solid 2px blue;
+
+} */
+
+.staff-pair-top{
+    /* border: solid 2px pink; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.staff-pair-bottom{
+    /* border: solid 2px green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.profes-detail a{
+    border-radius: 2px;
+    background-color: darkblue;
+    padding: 2px 10px;
+}
 
 
+.profes img{
+    width: 55%;
+    height:auto;
+}
+
+/*-----sub footer ----*/
+.sub-footer{
+    /* border: solid 2px red; */
+    padding: 2em 1em;
+    margin: 2px 0 0 0;
+    color: rgb(248, 241, 241);
+    background: rgb(34, 33, 33);/*背景色*/
+    opacity: 1;
+    bottom:100px;
+    width: 100%;
+}
+
+.sub-footer-pair{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+}
+
+.direction-codenotch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left:100px;
+    
+}
+
+.footer-logo img{
+    margin: 7vh 100vh 0 0;
+}
 
 
-
-
-
+/*------footer-------*/
 .main-footer {
     width: 100%;
     padding: 10px 0;

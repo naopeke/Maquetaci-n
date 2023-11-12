@@ -117,10 +117,16 @@ h4 {
     display: flex;
     align-items: center;
     text-align: justify;
+    /* border: solid 2px yellow; */
 }
 
 .left-section{
     text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:3em;
+    /* border: solid 2px red; */
 }
 
 .left-section span {
@@ -131,8 +137,16 @@ h4 {
     width: 60%;
     margin-left: 50px;
     text-align-last: left;
+    display: flex;
+    align-items: center;
+    /* border: solid 2px blue; */
 }
 
+.message-pair{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+}
 
 .guide-to-course {
     /* border: solid 2px red; */
