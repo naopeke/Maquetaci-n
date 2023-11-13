@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    background-color: #32373c;
+    color: #abb8c3;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+    background-color: black;
+    opacity: 0.9;
+    position: fixed;
+    /*絶対位置*/
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    z-index: 10000;
+}
+
+nav {
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: flex-end;
+    display: flex;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-left: 50px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.header-container {
+    display: flex;
+}
+
+container {
+    width: 1170px;
+    padding: 0;
+    margin: 0 auto;
+    letter-spacing: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header-logo {
+    margin: 28px 250px 0 0;
+}
+
+h3 {
+    font-size: 4vh;
+}
+
+h3 span {
+    color: red;
+    font-size: 7vh;
+}
+
+h1 span {
+    color: red;
+}
+
+h4 {
+    font-size: 3vh;
+}
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    color: white;
+    background-image: url(https://www.codenotch.com/wp-content/uploads/2021/09/Web-portada-3.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.top-wrapper h3 {
+    opacity: 0.7;
+}
+
+.top-wrapper h1 {
+    font-size: 40px;
+}
+
+.top-wrapper h4 {
+    opacity: 0.7;
+}
+
+.message-wrapper {
+    height: 40vh;
+    width:100%;
+    position: relative;/*相対位置*/
+}
+
+.message-wrapper article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.message-wrapper img {
+    height: 500px;
+}
+.message-content {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    /* border: solid 2px yellow; */
+}
+
+.left-section{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:3em;
+    /* border: solid 2px red; */
+}
+
+.left-section span {
+    font-size: 30px;
+}
+
+.right-text {
+    width: 60%;
+    margin-left: 50px;
+    text-align-last: left;
+    display: flex;
+    align-items: center;
+    /* border: solid 2px blue; */
+}
+
+.message-pair{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.guide-to-course {
+    /* border: solid 2px red; */
+    height: 50vh;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.course-landing {
+    margin-top: 20px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.web, .data {
+    border-top: 5px solid whitesmoke;
+    border-bottom: 5px solid whitesmoke;
+    width: 80%;
+    min-height: 150px;
+    color:white;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+.btn-web, .btn-data {
+    border-radius: 5%;
+    color:white;
+    background-color: #2d0075;
+    text-decoration: none;
+    padding: 10px 15px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+
+.img-container {
+    max-height: 40vh;
+    }
+    
+    .img-container img {
+        max-height:40vh;
+
+    }
+
+.main-footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+    /*絶対位置*/
+    bottom: 0;
+    /*下に固定*/
+}
+
+.btn-wrapper img {
+    height: 35px;
+}
+
+.btn {
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 4px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.btn.twitter,
+.btn.linkedin,
+.btn.facebook {
+    float: right;
+}
+
+
+
+.btn:active {
+    background-color: white;
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+}
+
+.telefone {
+    float: left;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+}
