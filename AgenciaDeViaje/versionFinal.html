@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVEL WORLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/webp" href="country-location-icon-1.webp">
+    <link rel="stylesheet" href="versionFinal.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="header-logo.jpg" alt="logo" class="logo">
+            </div>
+            <div class="header-right">
+                <a href="#" class="login">Log In</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <section class="top-wrapper">
+            <div class="section-container">
+
+                <div class="text-area">
+                    <div class="text-box">
+                        <h1>REACH OUT TO YOUR DESTINY</h1>
+                        <p>Our travel agency is ready to offer you an exciting vacation that is designed to fit your own
+                            needs and wishes.<br><br>Tell us about your destination.</p>
+                    </div>
+                </div>
+
+                <div class="form-area">
+                    <form class="form" 　action="#">
+                        <div class="text-form">
+                            <h4>Describe Your New Destination Here</h4>
+                        </div>
+                        <div class="form-list-wrapper">
+                            <ul class="form-list">
+                                <li>
+                                    <label for="name">Nombre* :</label>
+                                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                                </li>
+                                <li>
+                                    <label for="familyName">Apellido* :</label>
+                                    <input type="text" id="familyName" name="familyName" placeholder="Apellido"
+                                        required>
+                                </li>
+                                <li>
+                                    <label for="pointOfOrigin">Origen* &nbsp;&nbsp;:</label>
+                                    <input type="text" id="pointOfOrigin" name="pointOfOrigin" placeholder="Origen"
+                                        required>
+                                </li>
+                                <li>
+                                    <label for="destination">Destino*&nbsp;&nbsp;:</label>
+                                    <input type="text" id="destination" name="destination" placeholder="Destino"
+                                        required>
+                                </li>
+                            </ul>
+                            <ul class="form-list">
+                                <li>
+                                    <label for="numberOfGests">Personas*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                                    <input type="number" id="numberOfGests" name="numberOfGests"
+                                        placeholder="Numero de Personas" required>
+                                </li>
+                                <li>
+                                    <label for="dateIn">Fecha Check-In * &nbsp;&nbsp;&nbsp;:</label>
+                                    <input type="date" id="dateIn" name="dateIn" placeholder="Fecha de Check-In"
+                                        required>
+                                </li>
+                                <li>
+                                    <label for="dateOut">Fecha Check-Out * :</label>
+                                    <input type="date" id="dateOut" name="dateOut" placeholder="Fecha de Check-Out"
+                                        required>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buton-wrapper">
+                            <button id=request onclick="requestedInfo()">Request the Information</button>
+                            <button id=filter onclick="filteredInfo()">Filter</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="middle-wrapper">
+            <div class="text-area">
+                <h1>OUR BEST TOURS</h1>
+            </div>
+
+            <div class="location">
+                <div class="location-pair-top">
+                    <div class="card">
+                        <img src="navidad.jpg" alt="pic1">
+                        <p>Christmas Season</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique harum, nihil rerum nulla
+                            sit inventore ducimus asperiores explicabo quia perspiciatis ad libero nisi tempora, eveniet
+                            quidem eaque perferendis necessitatibus autem!</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="guadalquivir.jpg" alt="pic2">
+                        <p>Guadalquivir</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tempora beatae voluptas quod
+                            facilis vitae. Repudiandae a rerum, voluptate est omnis incidunt, odio voluptates nostrum,
+                            doloribus blanditiis quibusdam mollitia amet.</p>
+                    </div>
+                    <div class="card">
+                        <img src="tenerife.jpg" alt="pic3">
+                        <p>Tenerife</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores porro, nesciunt ipsam
+                            ullam exercitationem minima enim minus eum placeat tempora nulla facere ea assumenda unde
+                            suscipit perspiciatis totam consequatur.</p>
+                    </div>
+
+                </div>
+                <div class="location-pair-bottom">
+                    <div class="card">
+                        <img src="malaga.jpg" alt="pic4">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero sequi consequuntur, debitis
+                            perspiciatis libero dolores nemo tempore deserunt voluptas placeat expedita, recusandae
+                            repellendus nobis repellat soluta non, cumque sit? Fuga!</p>
+                    </div>
+                    <div class="card">
+                        <img src="canarias.jpg" alt="pic5">
+                        <p>Canarias</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptas nisi quibusdam
+                            corporis dolore dolorum commodi laboriosam, odio sint natus? Totam fuga natus dignissimos
+                            incidunt quaerat autem assumenda maiores necessitatibus.</p>
+                    </div>
+                    <div class="card">
+                        <img src="malaga.jpg" alt="pic6">
+                        <p>Málaga</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, error quasi asperiores
+                            consequuntur atque totam ipsum saepe magnam fugiat consequatur ab rem delectus quaerat
+                            pariatur alias harum nobis perspiciatis placeat.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </section>
+    <script src="script2.js"></script>
+</body>
+
+</html>
