@@ -1,0 +1,44 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, 
+p, div, article, section {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:black;
+}
+
+.header{
+    position:fixed;
+}
+
+.header-list{
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.header-list li{
+    /* border:2px solid yellow; */
+    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width:100px;
+}
+
+.header-list a{
+    text-decoration: none;
+    color:rgb(29, 28, 28);
+    width:100%;
+}
+
+.header-list li:hover{
+    background-color: #e2f0fc;
+}
