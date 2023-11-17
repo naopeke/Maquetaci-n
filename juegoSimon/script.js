@@ -44,12 +44,20 @@
 
 //! iniciar //
 document.getElementById('iniciar').addEventListener('click', function() {
+    // let changeNumber = Math.floor(Math.random()*4) +1;
+
+    // for(let i=0; i< changeNumber; i++){
     let maxValue = 0xFFFFFF;
     let randomNumber = Math.floor(Math.random() * maxValue);
     randomNumber = randomNumber.toString(16);
     let randomColor = randomNumber.padStart(6, '0');
     document.querySelector('.box').style.backgroundColor = `#${randomColor.toUpperCase()}`;
+
+//     setTimeout()
+// }
 });
+
+//↑　sale solo un color. //
 
 //! recetear //
 const initialColor = '#FFFFFF';
