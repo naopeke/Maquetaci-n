@@ -8,12 +8,17 @@ p, div, article, section {
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color:black;
+    background-color:rgba(0, 0, 0, 0.863);
+    color:white;
 }
 
-.header{
+
+/*---header---*/
+
+/* .header{
     position:fixed;
-}
+    z-index: 100;
+} */
 
 .header-list{
     /* border: 2px solid red; */
@@ -37,8 +42,116 @@ body{
     text-decoration: none;
     color:rgb(29, 28, 28);
     width:100%;
+    transition:all 0.5s 0s ease;
 }
 
 .header-list li:hover{
     background-color: #e2f0fc;
+    font-weight: bold;
+    font-size:large;
+}
+
+
+/*-- top wrapper --*/
+.top-wrapper{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.top-wrapper h3{
+    border: 2px solid yellow;
+    padding: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5em;
+}
+
+.top-wrapper h1{
+    border: 2px solid green;
+    padding: 50px 0 60px 0;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.3em;
+}
+
+.img-nao {
+    border: 2px solid blue;
+    width:300px;
+}
+
+.top-wrapper p{
+    border: 2px solid yellow;
+    width: 600px;
+    line-height: 2em;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.1em;
+    text-align: justify;
+}
+
+.bottom-wrapper{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+}
+
+.item-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:20px 20px 50px 20px;
+    width: 80%;
+}
+
+.box{
+    border:2px solid white;
+    width:calc(30% - 10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 2em 2em 2em 2em;
+    margin: 1em;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.box img{
+    width: 35%;
+    margin:1.5em 0 1em 0;
+}
+
+.box p{
+    font-size: 1.5em;
+    margin-bottom:3em;
+    color:black;
+}
+
+.btn-knowledge, .btn-project, .btn-contact {
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    background-color: darkorange;
+    color:white;
+    border-bottom: 4px solid #627295;
+    border-radius: 10px;
+}
+.btn-knowledge a, .btn-project a, .btn-contact a:hover {
+    background-color: rgb(190, 190, 190);
+    transition:all 0.5s 0s ease;
+    font-size: larger;
+}
+
+/*---footer---*/
+footer{
+    border: 2px solid yellow;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    z-index: 50;
+}
+
+footer p{
+    float:right;
 }
