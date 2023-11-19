@@ -1,0 +1,131 @@
+h1, h2, h3, 
+p, div, article, section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgba(0, 0, 0, 0.863);
+    color:white;
+    margin:0;
+}
+
+/*---header---*/
+
+header{
+    position:fixed;
+    z-index: 100;
+    margin-top:0;
+    width:100%;
+    top:0;
+}
+
+.header-list{
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+    margin:0
+}
+
+.header-list li{
+    /* border:2px solid yellow; */
+    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width:20%;
+}
+
+.header-list a{
+    text-decoration: none;
+    color:rgb(29, 28, 28);
+    width:100%;
+    transition:all 0.5s 0s ease;
+}
+
+.header-list li:hover{
+    background-color: #e2f0fc;
+    font-weight: bold;
+    font-size:large;
+}
+
+/*----top wrapper---*/
+.section-wrapper{
+/* border: 2px solid red; */
+padding-top:20vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 3em;
+}
+
+.section-wrapper h1{
+    font-size: 2em;
+    margin-bottom:2em;
+}
+
+.section-wrapper img{
+    width:20vh;
+    margin:5em, 0;
+}
+
+.list-title span{
+    color: darkorange;
+}
+
+.list-knowledge li{
+    /* border:2px solid yellow; */
+    font-size: 2em;
+    text-align: center;
+    width: 60vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 2em;
+}
+
+.list-knowledge li:before{
+    content:url('checklist.png');
+    display:inline-block;
+    width:20px;
+    height: 20px;
+    margin-right:10px;
+    /* position:relative; */
+    top:2px;
+    left:0;
+}
+
+.list-knowledge a{
+    text-decoration: none;
+    color:white;
+}
+
+.list-knowledge a:hover{
+    background-color: #e2f0fc;
+    color:black;
+    font-weight: bold;
+    transition:all 0.5s 0s ease;
+}
+
+/*---footer---*/
+footer{
+    /* border: 2px solid yellow; */
+    position:fixed;
+    width:100%;
+    bottom:0;
+    z-index: 50;
+}
+
+footer p{
+    float:right;
+}
