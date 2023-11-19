@@ -1,0 +1,85 @@
+h1, h2, h3, 
+p, div, article, section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgba(0, 0, 0, 0.863);
+    color:white;
+    margin:0;
+}
+
+/*---header---*/
+
+header{
+    position:fixed;
+    z-index: 100;
+    margin-top:0;
+    width:100%;
+    top:0;
+}
+
+.header-list{
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+    margin:0
+}
+
+.header-list li{
+    /* border:2px solid yellow; */
+    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width:20%;
+}
+
+.header-list a{
+    text-decoration: none;
+    color:rgb(29, 28, 28);
+    width:100%;
+    transition:all 0.5s 0s ease;
+}
+
+.header-list li:hover{
+    background-color: #e2f0fc;
+    font-weight: bold;
+    font-size:large;
+}
+
+
+/*--main--*/
+article{
+    margin-top:20vh;
+}
+
+
+
+
+
+/*--footer--*/
+footer{
+    /* border: 2px solid yellow; */
+    position:fixed;
+    width:100%;
+    bottom:0;
+    z-index: 50;
+}
+
+footer p{
+    float:right;
+    color: white;
+}
