@@ -1,0 +1,140 @@
+h1, h2, h3, 
+p, div, article, section {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgba(0, 0, 0, 0.863);
+    color:white;
+    margin:0;
+}
+
+/*---header---*/
+
+header{
+    position:fixed;
+    z-index: 100;
+    margin-top:0;
+    width:100%;
+    top:0;
+}
+
+.header-list{
+    /* border: 2px solid red; */
+    background-color: rgba(255, 255, 255, 0.781);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 80px;
+    margin:0
+}
+
+.header-list li{
+    /* border:2px solid yellow; */
+    text-align: center;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width:20%;
+}
+
+.header-list a{
+    text-decoration: none;
+    color:rgb(29, 28, 28);
+    width:100%;
+    transition:all 0.5s 0s ease;
+}
+
+.header-list li:hover{
+    background-color: #e2f0fc;
+    font-weight: bold;
+    font-size:large;
+}
+
+/*---top wrapper---*/
+/* .top-wrapper{
+    border: 2px solid red;
+
+} */
+
+.list-title span{
+    color:darkorange;
+}
+
+.list-knowledge{
+    /* border: 2px solid orange; */
+    list-style: none;
+    display: flex;
+    margin-top:5em;
+    padding:0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-wrapper h1{
+    /* border: 2px solid pink; */
+    margin-top:3em;
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.list-knowledge li{
+    /* border:2px solid yellow; */
+    font-size: 2em;
+    text-align: center;
+    width: 60vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.list-knowledge li:before{
+    content:url('correct.png');
+    display:inline-block;
+    width:20px;
+    height: 20px;
+    margin-right:10px;
+    /* position:relative; */
+    top:2px;
+    left:0;
+}
+
+/*---bottom wrapper---*/
+.bottom-wrapper h2{
+    /* border: 2px solid blue; */
+    margin:3em 0 2em 0;
+    text-align: center;
+}
+
+.app-box{
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    background-color: #e2f0fcd0;
+}
+
+.app-box img{
+    width:calc(7% - 5px);
+}
+
+/*---footer---*/
+footer{
+    /* border: 2px solid yellow; */
+    position:fixed;
+    width:100%;
+    bottom:0;
+    z-index: 50;
+}
+
+footer p{
+    float:right;
+}

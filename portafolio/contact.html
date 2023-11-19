@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <ul class="header-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutme.html">ABOUT ME</a></li>
+            <li><a href="knowledge.html">KNOWLEDGE</a></li>
+            <li><a href="project.html">PROJECT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </header>
+
+<article>
+    <section>
+        <form class=contact-form action="#">
+            <div class="form-pair-top">
+                <div class="address">
+                    <h1>MADRID</h1>
+                    <p>Las Rozas de Madrid 28232</p>
+                </div>
+    
+                <div class="contact-info">
+                    <h1>CONTACT INFO</h1>
+                    <p>T: +34 648 000 000</p>
+                    <p>E: info@naomukai.com</p>
+                </div>
+            </div>
+    
+            <div class="form-pair-bottom">
+                <div class="message-me">
+                    <h1>MESSAGE ME</h1>
+                    <div class="list-pair-top">
+                        <input type="text" id="name" placeholder="Your name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="list-pair-bottom">
+                        <textarea id="message" placeholder="Write your message" required></textarea>
+                        <button id="send" onclick="sentInfo()">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+    </section>
+   
+</article>
+ 
+<footer>
+    <p>© nao mukai</p>
+</footer>
+<script></script>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
