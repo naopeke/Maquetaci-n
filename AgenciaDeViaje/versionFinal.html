@@ -37,15 +37,15 @@
                 </div>
 
                 <div class="form-area">
-                    <form class="form" 　action="#">
+                    <form class="form" action="#">
                         <div class="text-form">
                             <h4>Describe Your New Destination Here</h4>
                         </div>
                         <div class="form-list-wrapper">
                             <ul class="form-list">
                                 <li>
-                                    <label for="name">Nombre* :</label>
-                                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                                    <label for="firstName">Nombre* :</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
                                 </li>
                                 <li>
                                     <label for="familyName">Apellido* :</label>
@@ -63,10 +63,10 @@
                                         required>
                                 </li>
                             </ul>
-                            <ul class="form-list">
+                            <ul class="form-list" id="form">
                                 <li>
-                                    <label for="numberOfGests">Personas*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
-                                    <input type="number" id="numberOfGests" name="numberOfGests"
+                                    <label for="numberOfGuests">Personas*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+                                    <input type="number" id="numberOfGuests" name="numberOfGuests"
                                         placeholder="Numero de Personas" required>
                                 </li>
                                 <li>
@@ -82,8 +82,8 @@
                             </ul>
                         </div>
                         <div class="button-wrapper">
-                            <button id=request onclick="requestedInfo()">Request the Information</button>
-                            <button id=filter onclick="filteredInfo()">Filter</button>
+                            <button id="request" onclick="requestedInfo()">Request the Information</button>
+                            <button id="filter" onclick="filteredInfo()">Filter</button>
                         </div>
 
                     </form>
@@ -91,6 +91,16 @@
             </div>
         </section>
 
+
+<!-- to show filtered results -->
+
+        <section class="filtered-result">
+            <h2>Filtered Information:</h2>
+            <p id="result"></p>
+        </section>
+
+
+<!-- middle-wrapper -->
         <section class="middle-wrapper">
             <div class="text-area">
                 <h1>OUR BEST TOURS</h1>
@@ -151,7 +161,7 @@
 
 
     </section>
-    <script src="script2.js"></script>
+    <script src="versionFinal.js"></script>
 </body>
 
 </html>
