@@ -1,4 +1,4 @@
-let customerData = [];
+const customerData = [];
 
 //request button
 
@@ -11,7 +11,7 @@ function requestedInfo (){
     const dateIn = document.getElementById('dateIn').value;
     const dateOut = document.getElementById('dateOut').value;
 
- let newInfo = {
+ const newInfo = {
   firstName: firstName,
   familyName: familyName,
   pointOfOrigin: pointOfOrigin,
@@ -26,6 +26,7 @@ function requestedInfo (){
   console.log('List of Info:', customerData);
 }
 
+const forms = document.forms.registerForm;
 
 
 //filter button
