@@ -1,0 +1,489 @@
+/*! reto1 */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reto1 {
+    display: grid;
+    grid-template-columns: 200px 100px 200px;
+    grid-template-rows: 200px 100px 200px;
+}
+
+.reto1 .a {
+    background-color: yellowgreen;
+    color: white;
+    text-align: center;
+}
+
+.reto1 .b {
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+.reto1 .c {
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+}
+
+.reto1 .d {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+.reto1 .e {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+.reto1 .f {
+    background-color: yellow;
+    color: white;
+    text-align: center;
+}
+
+
+
+/*! reto2 */
+
+.reto2-padre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 800px;
+}
+
+.reto2-hijo {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr;
+}
+
+.reto2-hijo .a,
+.reto2-hijo .c,
+.reto2-hijo .e {
+    background-color: yellowgreen;
+}
+
+.reto2-hijo .b,
+.reto2-hijo .d,
+.reto2-hijo .f {
+    background-color: black;
+    color: white;
+}
+
+
+/*! reto3 */
+
+
+
+.reto3{
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 2fr [y3] 1fr [y4];
+    height:300px;
+}
+
+header{
+    display: grid;
+    grid-column-start: x0;
+    grid-column-end: x4;
+    grid-row-start: y0;
+    grid-row-end:y1;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-padre{
+    display: grid;
+    grid-column-start: x0;
+    grid-column-end: x3;
+    grid-row-start: y1;
+    grid-row-end:y3;
+
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y1] 1fr [y2] 2fr [y3];
+
+    background-color: blue;
+
+}
+
+.contenido{
+    display: grid;
+    grid-column-start: x0;
+    grid-column-end: x3;
+    grid-row-start: y1;
+    grid-row-end:y2;
+    border: 2px solid white;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.texto1{
+    display: grid;
+    grid-column-start: x0;
+    grid-column-end: x2;
+    grid-row-start: y2;
+    grid-row-end:y3;
+    border: 2px solid white;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.texto2{
+    display: grid;
+    grid-column-start: x2;
+    grid-column-end: x3;
+    grid-row-start: y2;
+    grid-row-end:y3;
+    border: 2px solid white;
+    color:white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-start: x3;
+    grid-column-end: x4;
+    grid-row-start: y1;
+    grid-row-end:y3;
+    background-color: aquamarine;
+}
+
+.menu{
+    background-color: aquamarine;
+    color:white;
+    border:2px solid black;
+}
+
+.menu1, .menu2, .menu3{
+    background-color: black;
+    color:white;
+    border:2px solid aquamarine;
+}
+
+.footer-padre{
+    display: grid;
+    grid-column-start: x0;
+    grid-column-end: x4;
+    grid-row-start: y3;
+    grid-row-end:y4;
+    background-color: purple;
+    color:white;
+
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y3] 1fr [y4];
+}
+
+.footer{
+    display: grid;
+    grid-column-start: x0;
+    grid-column-end: x2;
+    grid-row-start: y3;
+    grid-row-end:y4;
+    background-color: purple;
+    color:white;
+    border:2px solid black;
+}
+
+.contacto{
+    display: grid;
+    grid-column-start: x2;
+    grid-column-end: x4;
+    grid-row-start: y3;
+    grid-row-end:y4;
+    background-color: purple;
+    color:white;
+    border:2px solid black;
+}
+
+
+
+
+
+/*!reto4*/
+.reto4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    'Header Header imagen'
+    'Aside-padre Contenido-padre Contenido-padre'
+    'Aside-padre Contenido-padre Contenido-padre'
+    'Aside-padre Contenido-padre Contenido-padre'
+    'Footer Footer Footer';
+    height:300px;
+}
+
+
+.Header{
+    display: grid;
+    grid-area: Header;
+    background-color: brown;
+    color:white;
+    text-align: center;
+}
+
+.imagen{
+    display: grid;
+    grid-area: imagen;
+    background-color: rgb(56, 13, 13);
+    color:white;
+    text-align: center;
+}
+
+.Aside-padre{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-area: Aside-padre;
+    background-color:orange;
+    border:5px solid orange;
+    grid-template-areas: 
+    'aside'
+    '.'
+    'aside2';
+}
+
+.aside{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: aside;
+    background-color:white;
+    color:orange;
+    text-align: center;
+}
+
+.aside2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: aside2;
+    background-color:white;
+    color:orange;
+    text-align: center;
+}
+
+.Contenido-padre{
+    display: grid;
+    grid-area: Contenido-padre;
+    background-color:rgb(255, 72, 0);
+    border:2px solid white;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    'Contenido-hijo'
+    'Texto-hijo';
+    text-align: center;
+}
+
+.Contenido-hijo{
+    display: grid;
+    grid-area: Contenido-hijo;
+    background-color:darkorange;
+    color:white;
+    border:2px solid white;
+}
+
+.Texto-hijo{
+    display: grid;
+    grid-area: Texto-hijo;
+    background-color:darkorange;
+    color:white;
+    border:2px solid white;
+}
+
+.Footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: Footer;
+    background-color:brown;
+    color:white;
+    text-align: center;
+}
+
+
+
+/* .reto3{
+    display: grid;
+    gap:10px 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    grid-template-areas:
+    'header header header header'
+    'contenido  contenido contenido menu-sidebar'
+    'text1 text1 text2 menu-sidebar'
+    'footer footer contacto contacto'
+}
+
+header{
+    grid-area: header;
+    background-color:black;
+    color:white;
+}
+
+.contenido{
+    grid-area: contenido;
+    background-color: blue;
+    color:white;
+    border: 2px solid white;
+}
+
+.texto1{
+    grid-area: text1;
+    background-color: blue;
+    color:white;
+    border: 2px solid white;
+}
+
+.texto2{
+    grid-area: text2;
+    background-color: blue;
+    color:white;
+    border: 2px solid white;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: purple;
+    color:white;
+    border: 2px solid black;
+}
+
+.contacto{
+    grid-area: contacto;
+    background-color: purple;
+    color:white;
+    border: 2px solid black;
+}
+
+.menu-sidebar{
+    grid-area: menu-sidebar;
+    background-color: aquamarine;
+    color:white;
+} */
+
+
+/* .reto3 {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas:
+        'header header header header'
+        'contenido-padre contenido-padre contenido-padre menu-padre'
+        'contenido-padre contenido-padre contenido-padre menu-padre'
+        'contenido-padre contenido-padre contenido-padre menu-padre'
+        'footer-padre footer-padre footer-padre footer-padre'
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+}
+
+.contenido-padre {
+    grid-area: contenido-padre;
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+    gap:2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'contenido contenido contenido'
+        'texto1 texto1 texto2'
+        'texto1 texto1 texto2'
+}
+
+.contenido {
+    border: 2px solid white;
+    grid-area: contenido;
+    padding: 0;
+}
+
+.texto1 {
+    border: 2 solid white;
+    grid-area: texto1;
+    border-right: 2px solid white;
+}
+
+.texto2 {
+    border: 2 solid white;
+    grid-area: texto2;
+    border-left:2px solid white;
+}
+
+
+.menu-padre {
+    grid-area: menu-padre;
+    background-color: aquamarine;
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'menu'
+        'menu1'
+        'menu2'
+        'menu3'
+}
+
+
+.menu {
+    border: 2px solid black;
+    color: white;
+}
+
+.menu1,
+.menu2,
+.menu3 {
+    background-color: black;
+    border:2px solid aquamarine;
+    color: white;
+}
+
+
+.footer-padre {
+    grid-area: footer-padre;
+    background-color: purple;
+    color: white;
+    gap:2px;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1f;
+    grid-template-areas:
+        'footer contacto'
+}
+
+.footer {
+    border: 2px solid black;
+    color: white;
+    grid-area: footer;
+}
+
+.contacto {
+    border: 2px solid black;
+    color: white;
+    grid-area: contacto;
+} */
+
+
+
