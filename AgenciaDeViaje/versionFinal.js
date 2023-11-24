@@ -1,4 +1,4 @@
-const customerData = [];
+// const customerData = [];
 
 //request button
 
@@ -11,7 +11,7 @@ function requestedInfo (){
     const dateIn = document.getElementById('dateIn').value;
     const dateOut = document.getElementById('dateOut').value;
 
- const newInfo = {
+ const newData = {
   firstName: firstName,
   familyName: familyName,
   pointOfOrigin: pointOfOrigin,
@@ -21,17 +21,46 @@ function requestedInfo (){
   dateOut: dateOut
  };
 
-  customerData.push(newInfo);     
+  // customerData.push(newInfo);     
   console.log('Newly added info:', newInfo);
-  console.log('List of Info:', customerData);
+  // console.log('List of Info:', customerData);
 }
 
-const forms = document.forms.registerForm;
+
 
 
 //filter button
+
 function filteredInfo(){
-  
+  let filteredData = newData.filter(data => {
+    return data.destination.toLowerCase().includes('canarias') ||
+    data.destination.toLowerCase().includes('mallorca') ||
+    data.destination.toLowerCase().includes('galicia');
+});
+
+for(const data of newData){
+    if (data.destination.toLowerCase().includes('canarias') || data.destination.toLowerCase().includes('mallorca') || data.destination.toLowerCase().includes('galicia')) {
+    console.log('Filtered Information:', filteredResult)
+    displayFilteredInfo();
+}
+}
+
+//var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
+
+function displayFilteredInfo(){
+  let resultSection = document.getElementById('result');
+  resultSection.innerHTML = '';
+
+  for(const data of filteredData){
+    let resultText = `Nombre: ${data.firstName}, Apellido: ${data.familyName}, Destino: ${data.destination}, `   
+    let resultParagraph = document.createElement('p');
+    resultParagraph.textContent = resultText;
+    resultSection.appendChild(resultParagraph);
+  }
+}
+
+
+
 }
 
 

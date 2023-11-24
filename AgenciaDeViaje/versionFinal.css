@@ -49,6 +49,7 @@ header .container{
     background-repeat: no-repeat;
     background-size:100%;
     width:100%;
+    min-width:969px;
     position:relative;
     height:70vh;
 }
@@ -103,6 +104,7 @@ header .container{
     width:30vw;
     padding:10px;
     position: relative;
+    max-height:770px;
 }
 
 .form {
@@ -154,15 +156,18 @@ input{
 /*--request--*/
 .filtered-result{
     border: 2px solid red;
+    height:4em;
+    min-width: 969px;
 }
 
 
 
 
 /*---middle wrapper--*/
-/* .middle-wrapper{
-    border: 2px solid blue;
-} */
+.middle-wrapper{
+    /* border: 2px solid blue; */
+    min-width:969px;
+}
 
 .location{
     /* border: 2px solid red; */
