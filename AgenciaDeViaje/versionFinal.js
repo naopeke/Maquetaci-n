@@ -1,8 +1,5 @@
 /* ----request botton---*/
 
-//array for info
-let customersInfo = [];
-
     //funcion　requested info
 function requestedInfo(){
     let customerName = document.getElementById('name').value;
