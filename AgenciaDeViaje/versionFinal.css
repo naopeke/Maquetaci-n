@@ -155,7 +155,7 @@ input{
 
 /*--request--*/
 .filtered-result{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height:4em;
     min-width: 969px;
 }

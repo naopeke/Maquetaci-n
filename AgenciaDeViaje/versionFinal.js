@@ -1,4 +1,4 @@
-// const customerData = [];
+ const newData = [];
 
 //request button
 
@@ -11,7 +11,7 @@ function requestedInfo (){
     const dateIn = document.getElementById('dateIn').value;
     const dateOut = document.getElementById('dateOut').value;
 
- const newData = {
+ const newInfo = {
   firstName: firstName,
   familyName: familyName,
   pointOfOrigin: pointOfOrigin,
@@ -21,9 +21,9 @@ function requestedInfo (){
   dateOut: dateOut
  };
 
-  // customerData.push(newInfo);     
-  console.log('Newly added info:', newInfo);
-  // console.log('List of Info:', customerData);
+  console.log('Newly added info as object:', newInfo);
+  newData.push(newInfo); 
+  console.log('Newly added info:', newData);
 }
 
 
@@ -38,16 +38,17 @@ function filteredInfo(){
     data.destination.toLowerCase().includes('galicia');
 });
 
-for(const data of newData){
-    if (data.destination.toLowerCase().includes('canarias') || data.destination.toLowerCase().includes('mallorca') || data.destination.toLowerCase().includes('galicia')) {
-    console.log('Filtered Information:', filteredResult)
-    displayFilteredInfo();
+if (filteredData.length > 0){
+  console.log('Filtered Information:', filteredData);
+  displayFilteredInfo(filteredData);
+} else {
+  console.log('No matching data');
 }
 }
 
 //var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
 
-function displayFilteredInfo(){
+function displayFilteredInfo(filteredData){
   let resultSection = document.getElementById('result');
   resultSection.innerHTML = '';
 
@@ -61,8 +62,6 @@ function displayFilteredInfo(){
 
 
 
-}
-
 
 
 
@@ -70,9 +69,9 @@ function displayFilteredInfo(){
 // { // everything put in here to let it be able to update DOM after DOM is initialized
 //     const searchContainer = document.querySelector('#search-form')
 
-// window.addEventListener('DOMContentLoaded', function() {
-//   const request = document.getElementById('request')
-//   const filter = document.getElementById('filter')
-//     console.log('ページが読み込まれました！');
+window.addEventListener('DOMContentLoaded', function() {
+  const request = document.getElementById('request')
+  const filter = document.getElementById('filter')
+    console.log('ページが読み込まれました！');
   
-// });
+});
