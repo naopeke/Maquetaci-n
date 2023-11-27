@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego Simón</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
 <body>
-    <h1>Juego Simón</h1>
-    <div id="color">
-        <div class="box"></div>
-    </div>
-    <button id="iniciar" onclick="iniciar()">Iniciar</button>
-    <button id="procesar" onclick="procesar()">Procesar la respuesta del código de colores</button>
-    <button id="continuar" onclick="continuar()">Continuar</button>
-    <button id="resetear" onclick="recetear()">Recetear el juego</button>
+    <article class="article">
+        <h1>Juego Simón</h1>
+        <div class="colorbox"></div>
+        <div class="level"></div>
+        <input type="text" id="userInput" placeholder="Escribe tu respuesta"></div>
+        <div class="commentbox"></div>
+        <button id="iniciar" onclick="iniciar()">Iniciar</button>
+        <button id="procesar" onclick="procesar()">Procesar la respuesta del código de colores</button>
+        <button id="continuar" onclick="continuar()">Continuar</button>
+        <button id="resetear" onclick="resetear()">Recetear el juego</button>
+    </article>
+
 
     <script src="script.js"></script>
 </body>
