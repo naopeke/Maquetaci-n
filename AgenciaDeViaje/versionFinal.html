@@ -37,15 +37,15 @@
                 </div>
 
                 <div class="form-area">
-                    <form class="form" 　action="#">
+                    <form class="form" name="registerform" action="#">
                         <div class="text-form">
                             <h4>Describe Your New Destination Here</h4>
                         </div>
                         <div class="form-list-wrapper">
                             <ul class="form-list">
                                 <li>
-                                    <label for="name">Nombre* :</label>
-                                    <input type="text" id="name" name="name" placeholder="Nombre" required>
+                                    <label for="firstName">Nombre* :</label>
+                                    <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
                                 </li>
                                 <li>
                                     <label for="familyName">Apellido* :</label>
@@ -58,32 +58,30 @@
                                         required>
                                 </li>
                                 <li>
-                                    <label for="destination">Destino*&nbsp;&nbsp;:</label>
+                                    <label for="destination">Destino* :</label>
                                     <input type="text" id="destination" name="destination" placeholder="Destino"
                                         required>
                                 </li>
                             </ul>
-                            <ul class="form-list">
+                            <ul class="form-list" id="form">
                                 <li>
-                                    <label for="numberOfGests">Personas*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
-                                    <input type="number" id="numberOfGests" name="numberOfGests"
-                                        placeholder="Numero de Personas" required>
+                                    <label for="numberOfGuests">Personas :</label>
+                                    <input type="number" id="numberOfGuests" name="numberOfGuests"
+                                        placeholder="Numero de Personas">
                                 </li>
                                 <li>
-                                    <label for="dateIn">Fecha Check-In * &nbsp;&nbsp;&nbsp;:</label>
-                                    <input type="date" id="dateIn" name="dateIn" placeholder="Fecha de Check-In"
-                                        required>
+                                    <label for="dateIn">Fecha Check-In :</label>
+                                    <input type="date" id="dateIn" name="dateIn" placeholder="Fecha de Check-In">
                                 </li>
                                 <li>
-                                    <label for="dateOut">Fecha Check-Out * :</label>
-                                    <input type="date" id="dateOut" name="dateOut" placeholder="Fecha de Check-Out"
-                                        required>
+                                    <label for="dateOut">Fecha Check-Out :</label>
+                                    <input type="date" id="dateOut" name="dateOut" placeholder="Fecha de Check-Out">
                                 </li>
                             </ul>
                         </div>
-                        <div class="buton-wrapper">
-                            <button id=request onclick="requestedInfo()">Request the Information</button>
-                            <button id=filter onclick="filteredInfo()">Filter</button>
+                        <div class="button-wrapper">
+                            <button id="request" onclick="requestedInfo()">Request the Information</button>
+                            <button id="filter" onclick="filteredInfo()">Filter</button>
                         </div>
 
                     </form>
@@ -91,6 +89,16 @@
             </div>
         </section>
 
+
+<!-- to show filtered results -->
+
+        <section class="filtered-result">
+            <h2>Filtered Information:</h2>
+            <p id="result"></p>
+        </section>
+
+
+<!-- middle-wrapper -->
         <section class="middle-wrapper">
             <div class="text-area">
                 <h1>OUR BEST TOURS</h1>
@@ -151,7 +159,7 @@
 
 
     </section>
-    <script src="script2.js"></script>
+    <script src="versionFinal.js"></script>
 </body>
 
 </html>

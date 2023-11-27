@@ -8,6 +8,7 @@ p, div, article, section {
 
 body{
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 /*----header---*/
@@ -48,6 +49,7 @@ header .container{
     background-repeat: no-repeat;
     background-size:100%;
     width:100%;
+    min-width:969px;
     position:relative;
     height:70vh;
 }
@@ -99,24 +101,23 @@ header .container{
     justify-content: center;
     background-color: rgba(247, 247, 247, 0.9);
     border-radius: 10px;
-    width:30%;
-    height:75%;
+    width:30vw;
     padding:10px;
-    margin-top:5%;
+    position: relative;
+    max-height:770px;
 }
 
 .form {
     padding: 0;
+    margin:0;
 } 
 
 
 .text-form{
     /* border:2px solid pink; */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     font-size: 1.75em;
-    height:2em;
 }
 
 
@@ -143,6 +144,7 @@ header .container{
 
 
 
+
 input{
     width: 100%;
     border:none;
@@ -151,10 +153,21 @@ input{
     color: darken(#f9f9f9, 50%);
 }
 
+/*--request--*/
+.filtered-result{
+    /* border: 2px solid red; */
+    height:4em;
+    min-width: 969px;
+}
+
+
+
+
 /*---middle wrapper--*/
-/* .middle-wrapper{
-    border: 2px solid blue;
-} */
+.middle-wrapper{
+    /* border: 2px solid blue; */
+    min-width:969px;
+}
 
 .location{
     /* border: 2px solid red; */
