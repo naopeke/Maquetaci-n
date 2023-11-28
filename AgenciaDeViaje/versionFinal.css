@@ -47,11 +47,9 @@ header .container{
     /* border:2px solid red; */
     background-image:url(backgroundimage.jpg);
     background-repeat: no-repeat;
-    background-size:100%;
-    width:100%;
-    min-width:969px;
-    position:relative;
-    height:70vh;
+    background-size:cover;
+    background-position:center;
+    height:630px;
 }
 
 .section-container{
