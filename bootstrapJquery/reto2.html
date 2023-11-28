@@ -200,7 +200,7 @@
         // <!-- add to cart -->
         function addToCart(itemID) {
             let title = $(`#prenda${itemID}`).text();
-            let price = $(`#price${itemID}`).text().trim();
+            let price = $(`#price${itemID}`).text();
             price = parseInt(price);
 
             cartItems.push({ name: title, price: price });
