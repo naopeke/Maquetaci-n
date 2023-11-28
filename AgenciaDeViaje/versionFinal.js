@@ -24,10 +24,24 @@ function requestedInfo() {
   console.log('Newly added info as object:', newInfo);
   newData.push(newInfo);
   console.log('Newly added info:', newData);
+
+  displayRequestedInfo();
 };
 
 
 
+
+function displayRequestedInfo(){
+  let resultSection = document.getElementById('userData');
+  resultSection.innerHTML='';
+  for (const data of newData) {
+    let resultText = `Nombre: ${data.firstName}, Apellido: ${data.familyName}, Destino: ${data.destination}, 
+    Número de personas: ${data.numberOfGuests}, Check-in: ${data.dateIn}, Check-out: ${data.dateOut}`;
+    let resultParagraph = document.createElement('p');
+    resultParagraph.textContent = resultText;
+    resultSection.appendChild(resultParagraph);
+  }
+};
 
 //filter button
 
@@ -68,8 +82,7 @@ function displayFilteredInfo(filteredData) {
 //     const searchContainer = document.querySelector('#search-form')
 
 window.addEventListener('DOMContentLoaded', function () {
-  const request = document.getElementById('request')
-  const filter = document.getElementById('filter')
+  const request = document.getElementById('request');
+  const filter = document.getElementById('filter');
   console.log('Page loaded');
-
 });
