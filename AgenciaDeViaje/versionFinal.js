@@ -25,56 +25,26 @@ function requestedInfo() {
   newData.push(newInfo);
   console.log('Newly added info:', newData);
 
-  displayRequestedInfo();
-};
-
-
-
-
-function displayRequestedInfo(){
   let resultSection = document.getElementById('userData');
-  resultSection.innerHTML='';
-  for (const data of newData) {
-    let resultText = `Nombre: ${data.firstName}, Apellido: ${data.familyName}, Destino: ${data.destination}, 
-    Número de personas: ${data.numberOfGuests}, Check-in: ${data.dateIn}, Check-out: ${data.dateOut}`;
-    let resultParagraph = document.createElement('p');
-    resultParagraph.textContent = resultText;
-    resultSection.appendChild(resultParagraph);
-  }
+  resultSection.innerHTML =`<p>Nombre: ${newInfo.firstName}, Apellido: ${newInfo.familyName}, Destino: ${newInfo.destination}, 
+  Número de personas: ${newInfo.numberOfGuests}, Check-in: ${newInfo.dateIn}, Check-out: ${newInfo.dateOut}</p>`;
 };
 
-//filter button
 
-function filteredInfo() {
-  let filteredData = newData.filter(data => {
-    return data.destination.toLowerCase().includes('canarias') ||
-      data.destination.toLowerCase().includes('mallorca') ||
-      data.destination.toLowerCase().includes('galicia');
-  });
 
-  if (filteredData.length > 0) {
-    console.log('Filtered Information:', filteredData);
-    displayFilteredInfo(filteredData);
-  } else {
-    console.log('No matching data');
+
+function filteredInfo(){
+  let resultSection = document.getElementById('filteredResult');
+  for (const data of newData) {
+    if (
+      data.destination.toLowerCase() === 'canarias' ||
+      data.destination.toLowerCase() === 'mallorca' ||
+      data.destination.toLowerCase() === 'galicia'
+  ){
+    console.log(newData);
+    resultSection.innerHTML = `<p>Nombre: ${data.firstName}, Apellido: ${data.familyName}, Destino: ${data.destination}<p>`;
   }
-}
-
-
-//var newArray = arr.filter(callback(currentValue[, index[, array]])[, thisArg])
-
-function displayFilteredInfo(filteredData) {
-  let resultSection = document.getElementById('result');
-  resultSection.innerHTML = '';
-
-  for (const data of filteredData) {
-    let resultText = `Nombre: ${data.firstName}, Apellido: ${data.familyName}, Destino: ${data.destination}, `;
-    let resultParagraph = document.createElement('p');
-    resultParagraph.textContent = resultText;
-    resultSection.appendChild(resultParagraph);
-  }
-}
-
+}};
 
 
 // document.addEventListener('DOMContentLoaded', () => 
