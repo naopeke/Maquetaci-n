@@ -50,9 +50,3 @@ function filteredInfo(){
 // document.addEventListener('DOMContentLoaded', () => 
 // { // everything put in here to let it be able to update DOM after DOM is initialized
 //     const searchContainer = document.querySelector('#search-form')
-
-window.addEventListener('DOMContentLoaded', function () {
-  const request = document.getElementById('request');
-  const filter = document.getElementById('filter');
-  console.log('Page loaded');
-});
