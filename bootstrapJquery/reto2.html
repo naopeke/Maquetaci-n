@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reto2</title>
+    <link rel="shortcut icon" href="nash!.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-bottom-dark data-bs-theme="dark" height="80">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="nash!.png" alt="Logo" height="50" class="d-inline-block align-text-top">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ULTIMAS LLEGADAS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">CATEGORIAS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Abrigos</a></li>
+                            <li><a class="dropdown-item" href="#">Vestidos</a></li>
+                            <li><a class="dropdown-item" href="#">Punto y jerséis</a></li>
+                            <li><a class="dropdown-item" href="#">Camisas, blusas y tops</a></li>
+                            <li><a class="dropdown-item" href="#">Vaqueros</a></li>
+                            <li><a class="dropdown-item" href="#">Pantalones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <form class="container-fluid justify-content-end">
+            <button id="carrito" class="btn btn-sm btn-light" type="button">CARRITO</button>
+        </form>
+    </nav>
+
+    <!-- main -->
+    <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto p-5">
+        <div class="col">
+            <div class="card h-100">
+                <img src="pantalones_tallealto.png" class="card-img-top w-80 p-3" alt="pantalones-suelto-gris">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda1">Pantalón Suelto Gris</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price1">20€</p>
+                    <a href="#" class="btn btn-dark add" id="button1" data-item-id="1">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="vestido_tunico.png" class="card-img-top w-80 p-3" alt="vestido_tunico">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda2">Vestido Túnico</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price2">18€</p>
+                    <a href="#" class="btn btn-dark add" id="button2" data-item-id="2">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="falda_print.png" class="card-img-top w-80 p-3" alt="falda_print">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda3">Falda Mid Print</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price3">12€</p>
+                    <a href="#" class="btn btn-dark add" id="button3" data-item-id="3">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="cardigan_largo_rayas.png" class="card-img-top w-80 p-3" alt="cardigan_largo_rayas">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda4">Cardigan Largo Rayas</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price4">22€</p>
+                    <a href="#" class="btn btn-dark add" id="button4" data-item-id="4">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="falda_mini_zebra.png" class="card-img-top w-80 p-3" alt="falda_mini_zebra">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda5">Falda Mini Zebra</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price5">20€</p>
+                    <a href="#" class="btn btn-dark add" id="button5" data-item-id="5">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="mono_overol.png" class="card-img-top w-80 p-3" alt="mono_overol">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda6">Mono Overol</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price6">18€</p>
+                    <a href="#" class="btn btn-dark add" id="button6" data-item-id="6">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="vestido_jersey.png" class="card-img-top w-80 p-3" alt="vestido_jersey">
+                <div class="card-body">
+                    <h5 class="card-title prenda" id="prenda7">Vestido Jersey</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price7">30€</p>
+                    <a href="#" class="btn btn-dark add" id="button7" data-item-id="7">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="pantalon_ancho.png" class="card-img-top w-80 p-3" alt="pantalon_ancho">
+                <div class="card-body">
+                    <h5 class="card-title prenda id=prenda8">Pantalón Ancho</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <p id="price8">20€</p>
+                    <a href="#" class="btn btn-dark add" id="button8" data-item-id="8">Añadir al carrito</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Añadido al carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="cartList">
+                    <!-- <p>Modal body text goes here.</p> -->
+                </div>
+                <div class="modal-footer">
+                    <p>TOTAL COMPRA: <span id="totalPrice">€</span></p>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark add">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- function -->
+
+    <script>
+        let cartItems = [];
+        let totalPrice = 0;
+        // $(document).ready(function () {
+        //     /** DOMツリー読み込み後の処理 */
+        // })
+
+        $(document).ready(function () {
+
+            $(".add").click(function () {
+                addToCart($(this).data("item-id"));
+            });
+            // https://api.jquery.com/click/
+            // https://api.jquery.com/click-shorthand/
+
+            $(".modal").on("show.bs.modal", function(){
+                showCart();
+            });
+
+            $("#carrito").click(function(){
+                $(".modal").modal("show");
+            })
+
+        });
+
+        // <!-- add to cart -->
+        function addToCart(itemID) {
+            let title = $(`#prenda${itemID}`).text();
+            let price = $(`#price${itemID}`).text();
+            price = parseInt(price);
+
+            cartItems.push({ name: title, price: price });
+            totalPrice += price;
+
+            console.log(`Item added to the cart: ${title}, ${price}€`)
+        }
+
+
+
+        // <!-- show the cart -->
+        function showCart() {
+            const cartList = $("#cartList");
+            cartList.empty();
+            cartItems.forEach(prenda => {
+                cartList.append(`<p>PRENDA: ${prenda.name} ${prenda.price}</p>`);
+            });
+            $("#totalPrice").text(`${totalPrice}€`);
+        }
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
