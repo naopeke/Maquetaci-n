@@ -1,0 +1,643 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: 1fr 20fr 1fr; */
+  grid-template-rows: 1fr 23fr 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100%;
+  background-color: #131313;
+}
+
+header {
+  /* border:2px solid red; */
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "header-left header-right header-right";
+  background-color: rgba(0, 0, 0, 0.747);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 70px;
+}
+
+.header-left {
+  /* background-color: red; */
+  grid-area: header-left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-left img {
+  height: 60px;
+  width: auto;
+}
+
+.header-right {
+  /* background-color:yellow; */
+  grid-area: header-right;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-right a {
+  font-size: 24px;
+}
+
+main {
+  /* border:2px solid yellow; */
+  margin-top: 0;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 列の幅を変更 */
+  grid-template-rows: 1/21 10/21 10/21;
+  grid-template-areas:
+    "searcharea searcharea searcharea"
+    "moviescards moviescards moviescards"
+    "form newcards newcards";
+}
+
+/* searchbar */
+.searchwrapper {
+  grid-area: searcharea;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "searchbar"
+    "showresults"
+}
+
+.searchbar {
+  /* border:2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 0;
+  grid-area: searchbar;
+}
+
+.searchInput {
+  width: 990px;
+  height: 49px;
+  outline: none;
+  font-size: 25px;
+  font-weight: 300;
+  background-color: #53535f;
+  caret-color: #f7f7f8;
+  color: #fff;
+  padding: 7px 10px;
+  border: 2px solid transparent;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  margin-right: 1px;
+  transition: all .2s ease;
+}
+
+.searchInput :hover {
+  border: 2px solid rgba(255, 255, 255, 0.16);
+}
+
+.searchInput :focus {
+  border: 2px solid #a970ff;
+  background-color: #0e0e10;
+}
+
+.search__btn {
+  border: none;
+  cursor: pointer;
+  background-color: rgba(42, 42, 45, 1);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__btn:hover {
+  background-color: rgba(54, 54, 56, 1);
+}
+
+
+/* show result */
+.showresults {
+  /* border: 2px solid green; */
+  grid-area: showresults;
+  /* background-color: #53535f; */
+  color: rgb(177, 174, 174);
+  margin-top: 1em;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container-p {
+  /* border:2px solid green; */
+  width: 100%;
+  font-size: 10px;
+}
+
+
+/* cards */
+
+
+.movie1 {
+  grid-area: card1;
+}
+
+.movie2 {
+  grid-area: card2;
+}
+
+.movie3 {
+  grid-area: card3;
+}
+
+.movie4 {
+  grid-area: card4;
+}
+
+.movie5 {
+  grid-area: card5;
+}
+
+.movie6 {
+  grid-area: card6;
+}
+
+.moviescards {
+  grid-area: moviescards;
+  /* background-color: lightblue; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card1 card2 card3"
+    "card4 card5 card6";
+  color: white;
+}
+
+.card {
+  gap: 15px;
+  /* border: 2px solid red; */
+  width: 300px;
+  height: 450px;
+  background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+}
+
+.card2 {
+  width: 300px;
+  height: 450px;
+  background-color: #131313;
+  border-radius: 20px;
+  transition: all .2s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 11fr 2fr 1fr 1fr;
+  grid-template-areas:
+    "image"
+    "title"
+    "actor"
+    "year";
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+}
+
+.card2 img {
+  width: 200px;
+}
+
+.card2 p {
+  font-size: 20px;
+}
+
+.cards-pair-top,
+.cards-pair-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 40px;
+}
+
+.card2 .image {
+  grid-area: image;
+  margin: auto;
+}
+
+.title {
+  grid-area: title;
+  text-align: center;
+}
+
+.actor {
+  grid-area: actor;
+  text-align: center;
+}
+
+.year {
+  grid-area: year;
+  text-align: center;
+}
+
+/* form */
+
+.form-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "form newcards"
+    "form newcards";
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-container {
+  /* border:2px solid yellow; */
+  width: 400px;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  grid-area: form;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.form-container button:active {
+  scale: 0.95;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.form-container .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #cfcfcf;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.form-container .form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+}
+
+.form-container .form-group textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 8px;
+  resize: none;
+  color: #fff;
+  height: 96px;
+  border: 1px solid #414141;
+  background-color: transparent;
+  font-family: inherit;
+}
+
+.form-container .form-group input::placeholder {
+  opacity: 0.5;
+}
+
+.form-container .form-group input:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-group textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.form-container .form-submit-btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-self: flex-start;
+  font-family: inherit;
+  color: #717171;
+  font-weight: 600;
+  width: 40%;
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.form-container .form-submit-btn:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+
+/* new cards */
+
+.new-cards-pair {
+  grid-area: newcards;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "newcard1 newcard2"
+    "newcard3 newcard4";
+}
+
+.newcard {
+  gap: 15px;
+  border: 2px solid gray;
+  width: 300px;
+  height: 450px;
+  border-radius: 20px;
+  transition: all .3s;
+  color: white;
+}
+
+.movie7 {
+  grid-area: newcard1;
+}
+
+.movie8 {
+  grid-area: newcard2;
+}
+
+.movie9 {
+  grid-area: newcard3;
+}
+
+.movie10 {
+  grid-area: newcard4;
+}
+
+.layout {
+  width: 300px;
+  height: 450px;
+  background-color: #131313;
+  border-radius: 20px;
+  transition: all .2s;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 11fr 2fr 1fr 1fr;
+  grid-template-areas:
+    "image"
+    "title"
+    "actor"
+    "year";
+  text-align: center;
+}
+
+
+
+/* footer */
+footer {
+  /* border:2px solid blue; */
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  height: 80px;
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+
+footer p {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- for smaller pc --- */
+@media screen and (max-width: 1010px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    height: 100%;
+    background-color: #131313;
+  }
+
+  main {
+    /* border: 2px solid yellow; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 10fr 1fr;
+    /* 1fr 15fr 5fr 10fr; */
+    grid-template-areas:
+      "searcharea"
+      "moviescards"
+      "form"
+      "newcards";
+  }
+
+  .searchInput {
+    width: 600px;
+    font-size: 17px;
+  }
+
+  .moviescards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6";
+  }
+
+  .form-wrapper {
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 2fr);
+    grid-template-areas:
+      "form newcards"
+      "form newcards";
+  }
+
+  .new-cards-pair {
+    grid-area: newcards;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "newcard1"
+      "newcard2"
+      "newcard3"
+      "newcard4";
+  }
+
+}
+
+
+
+/* --- for tablet --- */
+@media screen and (max-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    height: 100%;
+    background-color: #131313;
+  }
+
+  .header-right{
+    display:none;
+  }
+
+  .menu-icon{
+    display:block;
+  }
+
+  
+  main {
+    /* border: 2px solid green; */
+    width:100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 10fr 1fr;
+    grid-template-areas:
+      "searcharea"
+      "moviescards"
+      "form"
+      "newcards";
+  }
+
+  .searchInput {
+    width: 300px;
+    font-size:9px;
+    display: flex;
+  }
+
+  .moviescards {
+    padding-left: 24%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3"
+      "card4"
+      "card5"
+      "card6";
+  }
+
+  .form-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "form"
+      "newcards";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .new-cards-pair {
+    grid-area: newcards;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "newcard1"
+      "newcard2"
+      "newcard3"
+      "newcard4";
+  }
+
+}
+
+
+/* --- for mobile --- */
+@media screen and (max-width: 576px){
+
+}

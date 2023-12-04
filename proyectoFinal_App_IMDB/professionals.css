@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr 20fr 1fr; */
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    height: 100%;
+    background-color: #131313;
+  }
+  
+  header {
+    /* border:2px solid red; */
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "header-left header-right header-right";
+    background-color: rgba(0, 0, 0, 0.747);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    height: 70px;
+  }
+
+
+.header-left {
+    /* background-color: red; */
+    grid-area: header-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-left img {
+    height: 60px;
+    width: auto;
+  }
+  
+  .header-right {
+    /* background-color:yellow; */
+    grid-area: header-right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .header-right a {
+    font-size: 24px;
+  }
+
+  main {
+    /* border:2px solid yellow; */
+    margin-top: 0;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1/4 3/4;
+    grid-template-areas:
+    "searcharea"
+    "professionalscards";
+  }
+
+  .searchwrapper {
+    grid-area: searcharea;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "searchbar"
+      "showresults"
+  }
+  
+  .searchbar {
+    /* border:2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 0;
+    grid-area: searchbar;
+  }
+  
+  .searchInput {
+    width: 990px;
+    height: 49px;
+    outline: none;
+    font-size: 25px;
+    font-weight: 300;
+    background-color: #53535f;
+    caret-color: #f7f7f8;
+    color: #fff;
+    padding: 7px 10px;
+    border: 2px solid transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    margin-right: 1px;
+    transition: all .2s ease;
+  }
+  
+  .searchInput .input:hover {
+    border: 2px solid rgba(255, 255, 255, 0.16);
+  }
+  
+  .searchInput .input:focus {
+    border: 2px solid #a970ff;
+    background-color: #0e0e10;
+  }
+  
+  .search__btn {
+    border: none;
+    cursor: pointer;
+    background-color: rgba(42, 42, 45, 1);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search__btn:hover {
+    background-color: rgba(54, 54, 56, 1);
+  }
+  
+  
+  /* show result */
+  .showresults {
+    /* border: 2px solid green; */
+    grid-area: showresults;
+    /* background-color: #53535f; */
+    color: rgb(177, 174, 174);
+    margin-top: 1em;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .container-p {
+    /* border:2px solid green; */
+    width: 100%;
+    font-size: 10px;
+  }
+  
+
+  .professionalsCards{
+    grid-area:professionalscards;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:       
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8"
+    "card9 card10 card11 card12"
+    "card13 card14 card15 card16"
+    "card17 card18 card19 card20";
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .professional1 {
+    grid-area:card1;
+  }
+  .professional2 {
+    grid-area:card2;
+  }
+  .professional3 {
+    grid-area:card3;
+  }
+  .professional4 {
+    grid-area:card4;
+  }
+  .professional5 {
+    grid-area:card5;
+  }
+  .professional6 {
+    grid-area:card6;
+  }
+  .professional7 {
+    grid-area:card7;
+  }
+  .professional8 {
+    grid-area:card8;
+  }
+  .professional9 {
+    grid-area:card9;
+  }
+  .professional10 {
+    grid-area:card10;
+  }
+  .professional11 {
+    grid-area:card11;
+  }
+  .professional12 {
+    grid-area:card12;
+  }
+  .professional13 {
+    grid-area:card13;
+  }
+  .professional14 {
+    grid-area:card14;
+  }
+  .professional15 {
+    grid-area:card15;
+  }
+  .professional16 {
+    grid-area:card16;
+  }
+  .professional17 {
+    grid-area:card17;
+  }
+  .professional18 {
+    grid-area:card18;
+  }
+  .professional19 {
+    grid-area:card19;
+  }
+  .professional20 {
+    grid-area:card20;
+  }
+
+  .card {
+    width: 190px;
+    height: 254px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
+    display: flex;
+    justify-content: center;
+   }
+
+   .card p{
+    color:white;
+    text-align: center;
+   }
+
+   img{
+    width: 150px;
+    margin-top: 10px;
+   }
+   
+   
+
+  /* footer */
+footer {
+    /* border:2px solid blue; */
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    height: 80px;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+  
+  
+  footer p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
