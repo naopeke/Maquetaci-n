@@ -64,10 +64,10 @@ class imdbApp {
         // resultSection.innerHTML = '';
         for (let movie of this.movies) {
             if (movie.title.toLowerCase().includes(searchInput))
-                resultSection.html(resultSection.html()+ `<p>Title: ${movie.title}, Relase year: ${movie.releaseYear}, Actors: ${movie.actors}</p>`);
-                // resultSection.innerHTML += `<p>Title: ${movie.title}, Relase year: ${movie.releaseYear}, Actors: ${movie.actors}</p>`;
+                resultSection.html(resultSection.html() + `<p>Title: ${movie.title}, Relase year: ${movie.releaseYear}, Actors: ${movie.actors}</p>`);
+            // resultSection.innerHTML += `<p>Title: ${movie.title}, Relase year: ${movie.releaseYear}, Actors: ${movie.actors}</p>`;
 
-            }
+        }
     }
 
     addNewCards() {
@@ -120,20 +120,20 @@ class imdbApp {
 };
 
 
-$(document).ready(function(){
+$(document).ready(function () {
     let app = new imdbApp();
-    $('#search').on('click', function(){
+    $('#search').on('click', function () {
         app.showMoviesResults();
     });
 
-    $('#submit').on('click', function(event){
+    $('#submit').on('click', function (event) {
         event.preventDefault();
         app.addNewCards();
     })
 
 })
 
-    // $(document).ready(function () {
-    //     /** DOMツリー読み込み後の処理 */
-    // })
+// $(document).ready(function () {
+//     /** DOMツリー読み込み後の処理 */
+// })
 

@@ -2,185 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFESSIONALS</title>
-    <link rel="shortcut icon" href="pelicula.png" type="image/x-icon">
-    <link rel="stylesheet" href="professionals.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <script src="professionals.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PROFESSIONALS</title>
+        <link rel="shortcut icon" href="pelicula.png" type="image/x-icon">
+        <link rel="stylesheet" href="professionals.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="professionals.js"></script>
 </head>
 
 <body>
 
-    <header>
-        <div class="header-left">
-            <img src="logo.png" alt="logo" width="200">
-        </div>
+        <header>
+                <div class="header-left">
+                        <img src="logo.png" alt="logo" width="200">
+                </div>
 
-        <div class="header-right">
-            <a class="nav-link" href="home.html">HOME</a>
-            <a class="nav-link" href="movies.html">MOVIES</a>
-            <a class="nav-link" href="professionals.html">PROFESSIONALS</a>
-        </div>
-    </header>
+                <div class="header-right">
+                        <a class="nav-link" href="home.html">HOME</a>
+                        <a class="nav-link" href="movies.html">MOVIES</a>
+                        <a class="nav-link" href="professionals.html">PROFESSIONALS</a>
+                </div>
+        </header>
 
-    <main>
-        <section class="searchwrapper">
-            <!-- searchbar -->
-            <div class="container searchbar">
-                <input type="text" name="text" class="searchInput" id="searchInput"
-                    placeholder="Search for a movie or professionals that you are looking for">
-                <button class="search__btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
-                        <path
-                            d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
-                            fill="#efeff1"></path>
-                    </svg>
-                </button>
-            </div>
+        <main>
+                <section class="searchwrapper">
+                        <!-- searchbar -->
+                        <div class="container searchbar">
+                                <input type="text" name="text" class="searchInput" id="searchInput"
+                                        placeholder="Search for a movie or professionals that you are looking for">
+                                <button class="search__btn" id="search">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22"
+                                                height="22">
+                                                <path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                                                        fill="#efeff1"></path>
+                                        </svg>
+                                </button>
+                        </div>
 
-            <div class="container showresults">
-                <p id="result">Result:</p>
-            </div>
-        </section>
+                        <div class="container showresults">
+                                <p id="result">Result:</p>
+                        </div>
+                </section>
 
-        <section class="professionalsCards">
+                <section class="professionalsCards">
 
-                <div class="card professional1">
-                    <div class="card2 professional1">
-                        <img class="image" src="ford.png" alt="indiana">
-                        <p class="actor">Harrison Ford</p>
-                    </div>
-                </div>
-                <div class="card professional2">
-                    <div class="card2 professional2">
-                        <img class="image" src="spielberg.png" alt="et">
-                        <p class="actor">Steven Spielberg</p>
-                    </div>
-                </div>
-                <div class="card professional3">
-                    <div class="card2 professional3">
-                        <img class="image" src="lucas.png" alt="iron">
-                        <p class="actor">George Lucas</p>
-                    </div>
-                </div>
-            <!-- </div>
+                        <div class="card professional1">
+                                <img class="image" src="ford.png" alt="indiana">
+                                <p class="actor">Harrison Ford</p>
+                        </div>
+                        <div class="card professional2">
+                                <img class="image" src="spielberg.png" alt="et">
+                                <p class="actor">Steven Spielberg</p>
+                        </div>
+                        <div class="card professional3">
+                                <img class="image" src="lucas.png" alt="iron">
+                                <p class="actor">George Lucas</p>
+                        </div>
+                        <div class="card professional4">
+                                <img class="image" src="kennedy.png" alt="pirates">
+                                <p class="actor">Kathleen Kennedy</p>
+                        </div>
+                        <div class="card professional5">
+                                <img class="image" src="barrymore.png" alt="galaxy">
+                                <p class="actor">Drew Barrymore</p>
+                        </div>
+                        <div class="card professional6">
+                                <img class="image" src="downey.png" alt="dd">
+                                <p class="actor">Robert Downey Jr.</p>
+                        </div>
+                        <div class="card professional7">
+                                <img class="image" src="favreau.png" alt="dd">
+                                <p class="actor">Jon Favreau</p>
+                        </div>
+                        <div class="card professional8">
+                                <img class="image" src="fergus.png" alt="dd">
+                                <p class="actor">Mark Fergus</p>
+                        </div>
+                        <div class="card professional9">
+                                <img class="image" src="arad.png" alt="dd">
+                                <p class="actor">Avi Arad</p>
+                        </div>
+                        <div class="card professional10">
+                                <img class="image" src="depp.png" alt="dd">
+                                <p class="actor">Johnny Depp</p>
+                        </div>
+                        <div class="card professional11">
+                                <img class="image" src="verbinski.png" alt="dd">
+                                <p class="actor">Gore Verbinski</p>
+                        </div>
+                        <div class="card professional12">
+                                <img class="image" src="beattie.png" alt="dd">
+                                <p class="actor">Stuart Beattie</p>
+                        </div>
+                        <div class="card professional13">
+                                <img class="image" src="bruckheimer.png" alt="dd">
+                                <p class="actor">Jerry Bruckheimer</p>
+                        </div>
+                        <div class="card professional14">
+                                <img class="image" src="pratt.png" alt="dd">
+                                <p class="actor">Chris Pratt</p>
+                        </div>
+                        <div class="card professional15">
+                                <img class="image" src="gunn.png" alt="dd">
+                                <p class="actor">James Gunn</p>
+                        </div>
+                        <div class="card professional16">
+                                <img class="image" src="perlman.png" alt="dd">
+                                <p class="actor">Nicole Perlman</p>
+                        </div>
+                        <div class="card professional17">
+                                <img class="image" src="pine.png" alt="dd">
+                                <p class="actor">Chris Pine</p>
+                        </div>
+                        <div class="card professional18">
+                                <img class="image" src="daley.png" alt="dd">
+                                <p class="actor">John Francis Daley</p>
+                        </div>
+                        <div class="card professional19">
+                                <img class="image" src="goldstein.png" alt="dd">
+                                <p class="actor">Jonathan Goldstein</p>
+                        </div>
+                        <div class="card professional20">
+                                <img class="image" src="latcham.png" alt="dd">
+                                <p class="actor">Jeremy Latcham</p>
+                        </div>
+                </section>
 
-            <div class="cards-pair-bottom"> -->
-                <div class="card professional4">
-                    <div class="card2 professional4">
-                        <img class="image" src="kennedy.png" alt="pirates">
-                        <p class="actor">Kathleen Kennedy</p>
-                    </div>
-                </div>
-                <div class="card professional5">
-                    <div class="card2 professional5">
-                        <img class="image" src="barrymore.png" alt="galaxy">
-                        <p class="actor">Drew Barrymore</p>
-                    </div>
-                </div>
-                <div class="card professional6">
-                    <div class="card2 professional6">
-                        <img class="image" src="downey.png" alt="dd">
-                        <p class="actor">Robert Downey Jr.</p>
-                    </div>
-                </div>
-                <div class="card professional7">
-                    <div class="card2 professional7">
-                        <img class="image" src="favreau.png" alt="dd">
-                        <p class="actor">Jon Favreau</p>
-                    </div>
-                </div>
-                <div class="card professional8">
-                    <div class="card2 professional8">
-                        <img class="image" src="fergus.png" alt="dd">
-                        <p class="actor">Mark Fergus</p>
-                    </div>
-                </div>
-                <div class="card professional9">
-                    <div class="card2 professional9">
-                        <img class="image" src="arad.png" alt="dd">
-                        <p class="actor">Avi Arad</p>
-                    </div>
-                </div>
-                <div class="card professional10">
-                    <div class="card2 professional10">
-                        <img class="image" src="depp.png" alt="dd">
-                        <p class="actor">Johnny Depp</p>
-                    </div>
-                </div>
-                <div class="card professional11">
-                    <div class="card2 professional11">
-                        <img class="image" src="verbinski.png" alt="dd">
-                        <p class="actor">Gore Verbinski</p>
-                    </div>
-                </div>
-                <div class="card professional12">
-                    <div class="card2 professional12">
-                        <img class="image" src="beattie.png" alt="dd">
-                        <p class="actor">Stuart Beattie</p>
-                    </div>
-                </div>
-                <div class="card professional13">
-                    <div class="card2 professional13">
-                        <img class="image" src="bruckheimer.png" alt="dd">
-                        <p class="actor">Jerry Bruckheimer</p>
-                    </div>
-                </div>
-                <div class="card professional14">
-                    <div class="card2 professional14">
-                        <img class="image" src="pratt.png" alt="dd">
-                        <p class="actor">Chris Pratt</p>
-                    </div>
-                </div>
-                <div class="card professional15">
-                    <div class="card2 professional15">
-                        <img class="image" src="gunn.png" alt="dd">
-                        <p class="actor">James Gunn</p>
-                    </div>
-                </div>
-                <div class="card professional16">
-                    <div class="card2 professional16">
-                        <img class="image" src="perlman.png" alt="dd">
-                        <p class="actor">Nicole Perlman</p>
-                    </div>
-                </div>
-                <div class="card professional17">
-                    <div class="card2 professional17">
-                        <img class="image" src="pine.png" alt="dd">
-                        <p class="actor">Chris Pine</p>
-                    </div>
-                </div>
-                <div class="card professional18">
-                    <div class="card2 professional18">
-                        <img class="image" src="daley.png" alt="dd">
-                        <p class="actor">John Francis Daley</p>
-                    </div>
-                </div>
-                <div class="card professional19">
-                    <div class="card2 professional19">
-                        <img class="image" src="goldstein.png" alt="dd">
-                        <p class="actor">Jonathan Goldstein</p>
-                    </div>
-                </div>
-                <div class="card professional20">
-                    <div class="card2 professional20">
-                        <img class="image" src="latcham.png" alt="dd">
-                        <p class="actor">Jeremy Latcham</p>
-                    </div>
-                </div>
-        </section>
 
- 
-    </main>
+        </main>
 
-    <footer>
-        <p>©Nao Mukai</p>
-    </footer>
+        <footer>
+                <p>©Nao Mukai</p>
+        </footer>
 </body>
 
 </html>

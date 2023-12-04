@@ -48,7 +48,7 @@ header {
 }
 
 .header-left img {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
@@ -61,7 +61,7 @@ header {
 }
 
 .header-right a {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 main {
@@ -110,7 +110,7 @@ main {
   outline: none;
   font-size: 25px;
   font-weight: 300;
-  background-color: #53535f;
+  /* background-color: #53535f; */
   caret-color: #f7f7f8;
   color: #fff;
   padding: 7px 10px;
@@ -571,18 +571,18 @@ footer p {
     background-color: #131313;
   }
 
-  .header-right{
-    display:none;
+  .header-right {
+    display: none;
   }
 
-  .menu-icon{
-    display:block;
+  .menu-icon {
+    display: block;
   }
 
-  
+
   main {
     /* border: 2px solid green; */
-    width:100%;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 10fr 10fr 1fr;
     grid-template-areas:
@@ -594,7 +594,7 @@ footer p {
 
   .searchInput {
     width: 300px;
-    font-size:9px;
+    font-size: 9px;
     display: flex;
   }
 
@@ -638,6 +638,4 @@ footer p {
 
 
 /* --- for mobile --- */
-@media screen and (max-width: 576px){
-
-}
+@media screen and (max-width: 576px) {}
