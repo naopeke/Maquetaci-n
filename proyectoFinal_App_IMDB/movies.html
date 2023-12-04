@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES</title>
+    <link rel="shortcut icon" href="pelicula.png" type="image/x-icon">
+    <link rel="stylesheet" href="movies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="movies.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <img src="logo.png" alt="logo" width="200">
+        </div>
+
+        <div class="header-right">
+            <a class="nav-link" href="home.html">HOME</a>
+            <a class="nav-link" href="movies.html">MOVIES</a>
+            <a class="nav-link" href="professionals.html">PROFESSIONALS</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="searchwrapper">
+            <!-- searchbar -->
+            <div class="container searchbar">
+                <input type="text" name="text" class="searchInput" id="searchInput"
+                    placeholder="Search for a movie or professionals that you are looking for">
+                <button class="search__btn" id="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22">
+                        <path
+                            d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z"
+                            fill="#efeff1"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="container showresults">
+                <p id="result">Result:</p>
+            </div>
+        </section>
+
+        <section class="moviescards">
+            <!-- movies cards -->
+            <!-- <div class="cards-pair-top"> -->
+            <div class="card movie1">
+                <div class="card2 movie1">
+                    <img class="image" src="indiana.png" alt="indiana">
+                    <p class="title">Indiana Jones and the Last Crusade</p>
+                    <p class="actor">Harrison Ford</p>
+                    <p class="year">1989</p>
+                </div>
+            </div>
+            <div class="card movie2">
+                <div class="card2 movie2">
+                    <img class="image" src="et.png" alt="et">
+                    <p class="title">E.T. the Extra-Terrestrial</p>
+                    <p class="actor">Harrison Ford</p>
+                    <p class="year">1982</p>
+                </div>
+            </div>
+            <div class="card movie3">
+                <div class="card2 movie3">
+                    <img class="image" src="iron.png" alt="iron">
+                    <p class="title">Iron Man</p>
+                    <p class="actor">Harrison Ford</p>
+                    <p class="year">2008</p>
+                </div>
+            </div>
+            <!-- </div>
+
+            <div class="cards-pair-bottom"> -->
+            <div class="card movie4">
+                <div class="card2 movie4">
+                    <img class="image" src="pirates.png" alt="pirates">
+                    <p class="title">Pirates of the Caribbean: The Curse of the Black Pearl</p>
+                    <p class="actor">Harrison Ford</p>
+                    <p class="year">2003</p>
+                </div>
+            </div>
+            <div class="card movie5">
+                <div class="card2 movie5">
+                    <img class="image" src="galaxy.png" alt="galaxy">
+                    <p class="title">Guardians of the Galaxy</p>
+                    <p class="actor">Harrison Ford</p>
+                    <p class="year">2014</p>
+                </div>
+            </div>
+            <div class="card movie6">
+                <div class="card2 movie6">
+                    <img class="image" src="dd.png" alt="dd">
+                    <p class="title">Dungeons & Dragons: Honor Among Thieves</p>
+                    <p class="actor">Harrison Ford</p>
+                    <p class="year">2023</p>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+
+        <section>
+            <div class="form-wrapper">
+                <div class="form-container">
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input required="" name="title" id="title" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Release Year</label>
+                            <input required="" name="releaseYear" id="releaseYear" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Actors</label>
+                            <input required="" name="actors" id="actors" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="nationality">Nationality</label>
+                            <input required="" name="nationality" id="nationality" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="director">Director</label>
+                            <input required="" name="director" id="director" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="writer">Writer</label>
+                            <input required="" name="writer" id="writer" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Language</label>
+                            <input required="" name="language" id="language" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="platform">Platform</label>
+                            <input required="" name="platform" id="platform" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="isMcu">MCU?</label>
+                            <input required="" name="isMCU" id="isMCU" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="mainCharacterName">mainCharacterName</label>
+                            <input required="" name="mainCharacterName" id="mainCharacterName" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="producer">Producer</label>
+                            <input required="" name="producer" id="producer" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="distributor">Distributor</label>
+                            <input required="" name="distributor" id="distributor" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="genre">Genre</label>
+                            <input required="" name="genre" id="genre" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="photo">Photo</label>
+                            <input required="" name="photo" id="photo" type="text">
+                        </div>
+
+
+                        <button type="submit" class="form-submit-btn" id="submit">Submit</button>
+                    </form>
+                </div>
+
+                <!-- area for new cards -->
+                <div class="new-cards-pair">
+                    <!-- <div class="newcard">
+                        <div class="layout movie7">
+                            <img class="image" src="new_movie1.jpg" alt="New Movie 1">
+                            <p class="title">New Movie 1</p>
+                            <p class="actor">Actor Name</p>
+                            <p class="year">2023</p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="newcard">
+                        <div class="layout movie8">
+                            <p class="title">New Movie 2</p>
+                            <p class="actor">Actor Name</p>
+                            <p class="year">2023</p>
+                        </div>
+                    </div>
+                    <div class="newcard">
+                        <div class="layout movie9">
+                            <p class="title">New Movie 3</p>
+                            <p class="actor">Actor Name</p>
+                            <p class="year">2023</p>
+                        </div>
+                    </div>
+                    <div class="newcard">
+                        <div class="layout movie10">
+                            <p class="title">New Movie 4</p>
+                            <p class="actor">Actor Name</p>
+                            <p class="year">2023</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©Nao Mukai</p>
+    </footer>
+</body>
+
+</html>
