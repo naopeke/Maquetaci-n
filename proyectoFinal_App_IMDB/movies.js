@@ -70,10 +70,12 @@ class imdbApp {
             }
     }
 
-    addNewCards(movie) {
+    addNewCards() {
         let newMovie = new Movie(
             $('#title').val(),
             // document.getElementById('title').value,
+            $('#releaseYear').val(),
+            // document.getElementById('releaseYear').value,
             $('#actors').val().split(', '),
             // document.getElementById('actors').value.split(', '),
             $('#nationality').val(),
@@ -100,17 +102,17 @@ class imdbApp {
             // document.getElementById('photo').value.split(', '),
         );
 
-        this.movies.push(newMovie)
+        this.movies.push(newMovie);
 
         let cardsContainer = document.querySelector('.new-cards-pair');
         let newCard = document.createElement('div');
-        newCard.classList.add('newcard')
+        newCard.classList.add('newcard');
         newCard.innerHTML =
             `<div class="layout">
-                                <img class="image" src="${movie.photo}" alt="${movie.title}">
-                                <p class="title">${movie.title}</p>
-                                <p class="actor">${movie.actors.join(', ')}</p>
-                                <p class="year">${movie.releaseYear}</p>
+                                <img class="image" src="${newMovie.photo}" alt="${newMovie.title}-img">
+                                <p class="title">${newMovie.title}</p>
+                                <p class="actor">${newMovie.actors.join(', ')}</p>
+                                <p class="year">${newMovie.releaseYear}</p>
                             </div>
                         </div>`;
         cardsContainer.appendChild(newCard);
@@ -124,9 +126,14 @@ $(document).ready(function(){
         app.showMoviesResults();
     });
 
-    $('#submit').on('click', function(){
+    $('#submit').on('click', function(event){
+        event.preventDefault();
         app.addNewCards();
     })
+
 })
 
+    // $(document).ready(function () {
+    //     /** DOMツリー読み込み後の処理 */
+    // })
 
