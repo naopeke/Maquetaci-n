@@ -51,7 +51,7 @@ header{
 }
 
 .header-left img{
-    height: 100px;
+    height: 50px;
     width:auto;
 }
 
@@ -64,7 +64,7 @@ header{
 }
 
 .header-right a{
-    font-size: 30px;
+    font-size: 22px;
 }
 
 
@@ -75,30 +75,27 @@ header{
 
 .img-text{
     /* border:2px solid blue; */
-    width: 400px;
-    height:150px;
+    width: 200px;
+    height:110px;
     text-align: center;
-    padding: 30px 15px;
+    padding:   1px 5px;
     background: #111111;
     color: #fff;
     border-radius: 0 0 15px 15px;
 }
 
-.img-text h2{
-    font-size:25px;
-    letter-spacing: 2px;
-}
 
 .img-text p{
-    font-size:10px;
+    font-size:15px;
 }
 
 .img-area, .img-area img{
     /* border:2px solid yellow; */
-    width:400px;
+    width:200px;
 }
 
 .img-area img{
+    /* border:2px solid green; */
     border-radius: 15px 15px 0 0;
 }
 
@@ -109,7 +106,7 @@ header{
     font-size: 50px;
     font-weight: bold;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .message span{
